@@ -16,7 +16,7 @@ def signUpPage():
 #def aboutUsPage():
 #    return render_template('AboutUs.html')
 
-
-if __name__ == "__main__":
-    app.run()
+if __name__ == '__main__':
+    from os import environ
+    app.run(debug=False, port=environ.get("PORT", 5000), processes=2)
     
