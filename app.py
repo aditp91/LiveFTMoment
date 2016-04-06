@@ -1,6 +1,7 @@
 # Python app using Flask for Web Development
 
 from flask import Flask, render_template
+from os import environ
 #static_folder = '/static/images'
 app = Flask(__name__)
 
@@ -17,6 +18,7 @@ def signUpPage():
 #    return render_template('AboutUs.html')
 
 if __name__ == '__main__':
-    from os import environ
-    app.run(debug=False, port=environ.get("PORT", 5000), processes=2)
-    
+    # Bind to PORT if defined, otherwise default to 5000.
+    port = int(environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port)
+
