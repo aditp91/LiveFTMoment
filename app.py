@@ -8,16 +8,17 @@ app = Flask(__name__)
 def main():
     return render_template('index.html')
 
-@app.route('/signInPage', methods=['GET', 'POST'])
+@app.route('/signInPage')
 def signInPage():
-    #render_template('signin.html')
-    return "reached signInPage method"
-    
-#@app.route('/aboutUs')
-#def aboutUsPage():
-#    return render_template('AboutUs.html')
+    return render_template('signin.html')
+
+@app.route('/signUpButton', methods=['GET', 'POST'])
+def signUpButton():
+    _email = request.form['email']
+    _password = request.form['password']
+    return "this is data"
 
 if __name__ == '__main__':
     # Bind to PORT if defined, otherwise default to 5000.
     port = int(environ.get('PORT', 5000))
-    app.run(host='0.0.0.0', port=port)
+    app.run(host='localhost', port=port)

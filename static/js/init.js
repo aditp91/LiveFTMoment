@@ -6,15 +6,26 @@
 
     });
 
-    $("#signInButton").click(function() {
-        $.ajax({
-            url: '/signInPage',
-            type: 'GET',
-            success: function(response) {
-                console.log(response);
-                console.log("Made it back to success")
-            }
-        });
+    $("#btnSignUp").click(function() {
+        var emailval = $('input#emailInput').val();
+        var pwdval = $('input#pwdInput').val();
+        console.log(emailval);
+        console.log(pwdval);
+        if (emailval !== "") {
+            $.ajax({
+                url: '/signUpButton',
+                type: 'POST',
+                data: {
+                    email: emailval,
+                    password: pwdval
+                },
+                success: function(response) {
+                    console.log(response);
+                }
+            });
+        } else {
+            alert("Insert a email!");
+        }
     });
     // end of document ready
 })(jQuery); // end of jQuery name space
