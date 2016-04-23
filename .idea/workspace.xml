@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="edbfd03b-f0f9-4704-a99f-4bcdafa07836" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/signin.html" afterPath="$PROJECT_DIR$/templates/signin.html" />
-    </list>
+    <list default="true" id="edbfd03b-f0f9-4704-a99f-4bcdafa07836" name="Default" comment="" />
     <ignored path="Mappy.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -842,12 +840,12 @@
       <updated>1458848265959</updated>
       <workItem from="1458848267464" duration="56000" />
       <workItem from="1458848429669" duration="8801000" />
-      <workItem from="1459184015547" duration="31621000" />
+      <workItem from="1459184015547" duration="31748000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40478000" />
+    <option name="totallyTimeSpent" value="40605000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
